@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="../assets/images/tb-favicon.png">
+  <link rel="stylesheet" href="../css/resume.css">
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/resume-print.css" media="print">
+</head>
+<body>
+  <header>
+    <h1>Resume</h1>
+    <nav class="navbar">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="./about-me.html">About Me</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./resume.html">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Sidebar & Contact Information-->
+  <div class="container">
+    <aside class="sidebar">
+      <div class="initials">TB</div>
+      <div class="contact">
+        <p><strong>Location</strong><br>Stevens Point, WI</p><br>
+        <p><strong>Phone</strong><br>(715) 315-2434</p><br>
+        <p><strong>Email</strong><br>trbrooks56@gmail.com</p><br>
+        <p><strong>LinkedIn</strong><br>www.linkedin.com/in/travis-brooks9000</p><br><br><br>
+        <button onclick="window.print()" class="btn print-btn">
+          <i class="btn-print"></i>🖨️ Print Resume
+        </button>
+        <a href="../assets/files/Travis-Resume.pdf" class="btn save-btn" download title="Save Resume as PDF">
+          <i class="btn-download"></i>💾 Save Resume
+        </a>
+      </div>
+    </aside>
+
+    <!--Main Resume-->
+    <main class="content">
+      <h1 class="outlined-text-h1">Travis Brooks</h1>
+      <p class="summary">
+        Resourceful and results-driven professional with extensive experience in operations management, team leadership, and customer service across top-tier retail
+        and service organizations. Currently transitioning into the IT and Software Development field, leveraging strong analytical skills, and process improvement
+        expertise. Recognized for problem-solving under pressure, leading cross-functional teams, and learning new technologies quickly. Seeking to apply a
+        business-minded, user-focused approach to Software Development and IT support roles.
+      </p>
+
+    <!--Experience Section-->
+    <section>
+      <h2 class="outlined-text-h2">Experience</h2>
+      <h3>Sales Service Representative | Cintas | Stevens Point, WI</h3>
+      <p><em>2024 – present</em></p>
+      <ul>
+        <li>Maintained and grew a route servicing 40+ customer accounts weekly by providing consistent, high-quality service and resolving client issues promptly.</li>
+        <li>Increased route revenue by 15% through strategic upselling and introducing new product lines tailored to customer needs.</li>
+      </ul>
+      <h3 class="outlined-text-h3">Operations Manager | Kroger | Stevens Point, WI</h3>
+      <p><em>2024 – 2024</em></p>
+      <ul>
+        <li>Oversaw daily store operations and implemented inventory control procedures, reducing shrink by 12% and improving stock accuracy.</li>
+        <li>Led and developed a team of 30+ associates, increasing departmental productivity and exceeding customer satisfaction targets for 6 consecutive quarters.</li>
+      </ul>
+      <h3 class="outlined-text-h3">Store Manager | Ross Stores | Marshfield, WI</h3>
+      <p><em>2023 – 2024</em></p>
+      <ul>
+        <li>Directed all store operations, consistently achieving or exceeding monthly sales goals by optimizing merchandising, staffing, and customer experience.</li>
+        <li>Reduced shrink by 18% year-over-year through rigorous loss prevention training, audits, and compliance enforcement.</li>
+      </ul>
+      <h3 class="outlined-text-h3">Store Lead | Walmart | Wisconsin Rapids, WI</h3>
+      <p><em>2019 – 2023</em></p>
+      <ul>
+        <li>Supervised over 400 associates to ensure seamless operations, delivering consistent top-tier customer service and resolving escalated issues promptly.</li>
+        <li>Maintained department readiness by ensuring accurate stock levels, merchandising compliance, and adherence to safety and operational protocols.</li>
+      </ul>
+    </section>
+
+    <!--Education Section-->
+    <section>
+      <h2 class="outlined-text-h2">Education</h2>
+      <p><strong>Mid-State Technical College | Wisconsin Rapids, WI</strong></p>
+      <ul>
+        <li>March 2025 | IT Software Development | Associate's Degree</li>
+        <li>Currently Enrolled</li>
+      </ul>
+      <p><strong>Necedah Area High School | Necedah, WI</strong></p>
+      <ul>
+        <li>May 2010 | High School Diploma</li>
+      </ul>
+    </section>
+
+    <!--Skills Section-->
+    <section>
+      <h2 class="outlined-text-h2">Key Skills and Characteristics</h2>
+      <ul>
+        <li>Leadership & Team Development</li>
+        <li>Operational Excellence</li>
+        <li>Customer Relationship Management & Service Focus</li>
+      </ul>
+    </section>
+    </main>
+  </div>
+  <!--Mobile Menu Function-->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+
+    toggle?.addEventListener('click', () =>
+    {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

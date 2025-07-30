@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-primary);
+  font-size: var(--font-base);
+}
+
+/*Homepage Graident Background*/
+@keyframes gradientBG
+{
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1
+{
+  font-family: var(--font-artistic);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--heading-h1);
+  font-size: var(--font-xlarge);
+}
+
+body
+{
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-style: double;
+  border-color: var(--heading-h1);
+}
+
+/*Nav Menu Settings*/
+a
+{
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: var(--font-large);
+  padding-left: 10px;
+}
+
+nav a
+{
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/*Main Text On Homepage*/
+.hero
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  min-height: 100vh;
+}
+
+.hero-text
+{
+  max-width: 50%;
+}
+
+.hero-text h1
+{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-text h2
+{
+  font-size: 2rem;
+  color: var(--font-primary);
+  margin-bottom: 20px;
+}
+
+.hero-text p
+{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/*Homepage Hire Me & Let's Chat Buttons*/
+.buttons
+{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary 
+{
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/*Hire Me Button Settings*/
+.btn-primary
+{
+  background-color: var(--button-bg);
+  color: white;
+  border-style: solid;
+  border-color: var(--accent-color);
+}
+
+/*Hire Me Button Hover Settings*/
+.btn-primary:hover
+{
+  background-color: var(--button-hover);
+}
+
+/*Let's Chat Button Settings*/
+.btn-secondary
+{
+  color: white;
+  border-style: solid;
+  border-color: var(--accent-color);
+  background: var(--button-bg);
+}
+
+/*Let's Chat Button Hover Settings*/
+.btn-secondary:hover
+{
+  background-color: var(--button-hover);
+  color: #fff;
+}
+
+/*Social Media Button Settings*/
+.social-icons a
+{
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/*Social Media Button Hover Settings*/
+.social-icons a:hover
+{
+  color: #ffffff;
+}
+
+/*Large Image of Me Settings*/
+.hero-image img
+{
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/tb-favicon.png">
+  <link rel="stylesheet" href="./css/themes.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>TB</h1>
+    <nav class="navbar">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./pages/about-me.html">About Me</a>
+        <a href="./pages/contact.html">Contact</a>
+        <a href="./pages/resume.html">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--MAIN TEXT-->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="home-header">Hi, I'm Travis Brooks</p>
+      <h2><span class="typing">Software Development Student</span></h2>
+      <p>
+        I'm passionate about learning web design. Let's build something great together.
+      </p>
+
+      <!--Hire Me & Let's Chat Buttons-->
+      <div class="buttons">
+        <a href="./pages/resume.html" class="btn-primary">Hire Me</a>
+        <a href="./pages/contact.html" class="btn-secondary">Let's Chat</a>
+      </div>
+
+      <!--Social Media Icons-->
+      <div class="social-icons">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/travis-brooks9000"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="../assets/images/Travis.png" alt="Travis Brooks">
+    </div>
+  </section>
+
+  <!--Typing Effect Under My Name-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    const typed = new Typed(".typing",
+    {
+      strings: [
+        "Software Development Student",
+        "Web Designer",
+        "Tech Enthusiast",
+        "Creative Problem Solver"
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true
+    });
+  </script>
+  <!--Mobile Menu Function-->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () =>
+    {
+      nav.classList.toggle('active');
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+h2
+{
+  font-size: 2rem;
+}
+
+p
+{
+  font-size: 1.5rem;
+}
+
+/*Photo Captions*/
+.caption
+{
+  margin-top: 8px;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--text-main);
+}
+.swiper-slide
+{
+  text-align: center;
+}
